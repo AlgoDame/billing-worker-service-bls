@@ -1,3 +1,7 @@
 import { ConsumerService } from "./services/consumerService";
 
-ConsumerService.receive();
+console.log("Waiting for rabbitmq blws")
+setTimeout(() => {
+    ConsumerService.receive();
+
+}, 40 * 1000)
